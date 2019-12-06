@@ -323,7 +323,9 @@ template {
   border-radius: 2px;
   text-transform: uppercase; }
   .button:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: #000000;
+    border: 1px solid #fff; }
   .button--primary {
     background-color: #e3b873;
     color: #fff;
