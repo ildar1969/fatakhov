@@ -3,9 +3,10 @@
   border: none
   border-radius: 2px
   text-transform: uppercase
+  font-size: 0.93rem
   &:hover
     cursor: pointer
-    background-color: #000000
+    background-color: #9b910a
     border: none
     
   &--primary
@@ -16,9 +17,12 @@
     &:hover
       box-shadow: none
       
+      
   &--outline 
-    border: none 
+    border: 1px solid $light
     color: $light
     background-color: transparent
-    
+    box-shadow: 0px 5px 15px rgba($light, 0.2s)
+    &:hover 
+      border: 1px solid $light
     
