@@ -4,15 +4,30 @@
   .nav 
      &__item 
        margin-right: 1rem
+  .contacts 
+     &__button 
+       margin-left: 8.33rem
+     &__phone
+       margin-right: 1.66rem       
 @media screen and ( max-width: 992px ) 
-   .nav 
+  .nav 
      display: none
-   .hero 
+  .hero 
      &__instagram 
        display: none
      &__content 
-       margin-left: 0  
-@media screen and ( max-width: 570px ) 
+       margin-left: 0 
+  .contacts 
+     &__phone
+       margin-right: 150px  
+    
+@media screen and ( max-width: 768px )
+   .contacts 
+     &__button 
+       display: none
+     &__phone
+       margin-right: 0    
+@media screen and ( max-width: 576px ) 
    .contacts
      &__phone 
        margin-right: 0

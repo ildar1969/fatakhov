@@ -492,7 +492,11 @@ body {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .contacts__button {
+    margin-left: 8.33rem; }
+  .contacts__phone {
+    margin-right: 1.66rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -500,9 +504,17 @@ body {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .contacts__phone {
+    margin-right: 150px; } }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 768px) {
+  .contacts__button {
+    display: none; }
+  .contacts__phone {
+    margin-right: 0; } }
+
+@media screen and (max-width: 576px) {
   .contacts__phone {
     margin-right: 0;
     color: #fff;
