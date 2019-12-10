@@ -6,9 +6,9 @@
        margin-right: 1rem
   .contacts 
      &__button 
-       margin-left: 8.33rem
+       margin-left: 1rem
      &__phone
-       margin-right: 1.66rem       
+       margin-right: 1rem       
 @media screen and ( max-width: 992px ) 
   .nav 
      display: none
@@ -19,15 +19,36 @@
        margin-left: 0 
   .contacts 
      &__phone
-       margin-right: 150px  
-    
+        margin-right: 150px  
+@media screen and ( max-width: 760px )
+  .row 
+    flex-direction: column
+    align-items: center
+  .types 
+    &__card 
+      margin-bottom: 5rem      
+  .card 
+    &__text 
+      margin-left: 0
+    .design 
+      background-color: $dark
+    &__section-title 
+      color: $light
+      
+    &__card 
+      margin-bottom: 5.7rem    
+   
 @media screen and ( max-width: 768px )
    .contacts 
      &__button 
        display: none
      &__phone
        margin-right: 0    
-@media screen and ( max-width: 576px ) 
+@media screen and ( max-width: 576px )
+   .section 
+     &__title 
+      &__description 
+        max-width: 21.86rem
    .contacts
      &__phone 
        margin-right: 0
@@ -50,6 +71,11 @@
        display: block
        min-width: 22.86rem
        margin-bottom: 1.85rem  
+@media screen and ( max-width: 320px )
+   .hero 
+     &__button 
+       display: block
+       min-width: 20rem      
 @media screen and ( max-height: 520px )
    .hero 
      &__scroll-down
