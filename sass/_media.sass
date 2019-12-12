@@ -1,7 +1,25 @@
+@media screen and ( max-width: 2000px )
+  .types
+    .card
+      &__pricetag
+        margin-bottom: 2rem
+  .design
+    .card
+      &__pricetag
+        margin-bottom: -0.5rem    
+  
 @media screen and ( max-width: 1400px )
   .nav 
     &__item 
       margin-right: 1rem
+  .types
+    .card
+      &__pricetag
+        margin-bottom: 1.8rem
+  .design
+  .card
+    &__pricetag
+      margin-bottom: -0.5rem    
   
 @media screen and ( max-width: 1200px )
   html 
@@ -13,7 +31,12 @@
      &__button 
        margin-left: 1rem
      &__phone
-       margin-right: 1rem       
+       margin-right: 1rem 
+  .design
+  .card
+    &__pricetag
+      margin-bottom: -0.5rem
+
 @media screen and ( max-width: 992px ) 
   .nav 
      display: none
@@ -24,8 +47,14 @@
        margin-left: 0 
   .contacts 
      &__phone
-        margin-right: 4rem  
+        margin-right: 4rem
+  .design
+  .card
+    &__pricetag
+      margin-bottom: -0.5rem   
+      
 @media screen and ( max-width: 760px )
+  
   .row 
     flex-direction: column
     align-items: center
@@ -36,19 +65,45 @@
     &__text 
       margin-left: 0
     .design 
-      background-color: $dark
+      background-color: $light
     &__section-title 
       color: $light
       
     &__card 
       margin-bottom: 5.7rem    
-   
+@media screen and ( min-width: 760px )
+  .design
+    background-color: $light
+    &__section-title
+     margin-bottom: 2.78rem
+     color: $dark
+     font-size: 1rem
+    &__card
+     margin-bottom: 5.7rem
+  .section-title
+    &__description
+     font-size: 1.5rem
+     max-width: 54.6rem
+     margin-bottom: 2rem
+  .row
+    flex-direction: row
+    justify-content: space-between
+  .card
+    flex-basis: 32%   
 @media screen and ( max-width: 768px )
    .contacts 
      &__button 
        display: none
      &__phone
-       margin-right: 0    
+      margin-right: 0
+   .design
+   .card
+     &__image
+      margin-top: 3rem
+     &__pricetag
+      padding: 1rem 2rem
+      margin-bottom: 1.5rem
+      
 @media screen and ( max-width: 576px )
    .section 
      &__title 
@@ -75,12 +130,47 @@
      &__button 
        display: block
        min-width: 22.86rem
-       margin-bottom: 1.85rem  
+       margin-bottom: 1.85rem
+
+   .types
+     .card__pricetag
+       margin-bottom: 2rem
+       padding: 1rem 2rem
+     .card__text
+       margin-left: 1px
+   .design    
+     .card
+       &__text
+        margin-top: -13rem
+        margin-bottom: 2rem
+        margin-left: 5px
+       &__pricetag
+        padding: 1rem 4rem
+        margin-bottom: -0.1rem
+       
+
 @media screen and ( max-width: 320px )
    .hero 
      &__button 
        display: block
-       min-width: 20rem      
+       min-width: 20rem 
+   .types    
+     .card
+       &__text
+        margin-top: -8rem
+        margin-bottom: 2rem
+        padding: 1rem 1rem
+        width: 75%
+        margin-left: 5px
+       &__pricetag
+         padding: 1rem 1rem
+         margin-bottom: 1.6rem 
+   .design
+      .card
+        &__text
+          width: 75%
+        &__pricetag
+          padding: 1rem               
 @media screen and ( max-height: 520px )
    .hero 
      &__scroll-down
