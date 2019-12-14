@@ -48,7 +48,10 @@
   .contacts 
      &__phone
         margin-right: 4rem
-  .design
+  .swiper
+    &-slide 
+      &__text
+        flex-basis: 50%
   .card
     &__pricetag
       margin-bottom: -0.5rem   
@@ -96,6 +99,10 @@
        display: none
      &__phone
       margin-right: 0
+   .swiper
+    &-slide 
+      &__text
+        flex-basis: 50%   
    .design
    .card
      &__image
@@ -115,14 +122,17 @@
        color: $light 
        text-decoration: none
      &__button 
-       display: none 
+       display: none
+     
    .title 
        font-size: 1.64rem 
    .hero
      &__scroll-down
        display: none 
      &__content 
-       max-width: 22.86rem   
+       max-width: 22.86rem
+       margin-left: 100px
+        
    .hero
      &__text
        font-size: 1.29rem
@@ -131,7 +141,11 @@
        display: block
        min-width: 22.86rem
        margin-bottom: 1.85rem
-
+   .projects 
+     .section-title
+       &__text
+   .mobile-order-top
+     order: -1   
    .types
      .card__pricetag
        margin-bottom: 2rem
@@ -153,7 +167,16 @@
    .hero 
      &__button 
        display: block
-       min-width: 20rem 
+       min-width: 20rem
+     &__content
+       margin-left: 7px
+   .projects
+     .section-title
+      &__heading 
+        margin-left: -60px
+   .swiper
+      &-button
+        margin-left: 10px
    .types    
      .card
        &__text
