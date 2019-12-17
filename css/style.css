@@ -357,7 +357,7 @@ template {
   font-size: 1.285rem;
   color: #fff;
   padding: 0.5rem 0; }
-  .input::placeholder {
+  .input--light::placeholder {
     color: #fff; }
 
 .policy__checkbox {
@@ -416,6 +416,8 @@ img {
     text-align: center; }
     .section-title--left {
       text-align: left; }
+    .section-title--light {
+      color: #fff; }
     .section-title__heading {
       font-family: 'Yeseva One', cursive;
       text-transform: uppercase;
@@ -591,11 +593,13 @@ img {
   .title--primary {
     color: #e3b873; }
 
-.projects .section-title__heading {
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 37px;
-  letter-spacing: 0.1px; }
+.projects {
+  padding-bottom: 30rem; }
+  .projects .section-title__heading {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0.1px; }
 
 .section-title__word {
   font-size: 25px; }
@@ -651,6 +655,74 @@ img {
   width: auto;
   bottom: 15px;
   margin-left: 15px; }
+
+.control__section-title {
+  margin-bottom: 2.214rem;
+  margin-top: -30rem; }
+  .control__section-title .section-title__heading {
+    font-size: 1.42rem;
+    font-weight: 400; }
+
+.control__video {
+  position: relative;
+  display: flex;
+  margin: auto;
+  margin-bottom: 4.428rem;
+  max-width: 58.357rem;
+  min-height: 31rem;
+  background: #131313 url("../img/image 6.jpg") center no-repeat;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15); }
+  .control__video::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); }
+
+.control__text {
+  max-width: 40.785rem;
+  margin: auto;
+  margin-bottom: 4.285rem;
+  text-align: center;
+  font-size: 1.428rem;
+  line-height: 2.4rem; }
+  .control__text::before {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-bottom: 2.5rem;
+    width: 55px;
+    height: 2px;
+    background-color: #e3b873;
+    border-radius: 30px; }
+
+.control__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 55rem;
+  margin: auto; }
+
+.control__input-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%; }
+
+.control__label {
+  margin-bottom: -7px; }
+
+.control__button {
+  padding: 1.2857rem 4.7857rem; }
+
+.control__policy {
+  flex-basis: 100%;
+  margin-top: 1.2rem; }
+  .control__policy-label {
+    justify-content: center; }
+
+.video__play {
+  position: relative;
+  margin: auto; }
 
 .types__section-title {
   margin-bottom: 2rem;
@@ -806,7 +878,10 @@ img {
   .contacts__phone {
     margin-right: 1rem; }
   .card__pricetag {
-    margin-bottom: -0.5rem; } }
+    margin-bottom: -0.5rem; }
+  .button--outline {
+    width: 190px;
+    height: 50px; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -894,6 +969,10 @@ img {
     margin-bottom: 1.85rem; }
   .mobile-order-top {
     order: -1; }
+  .control__form {
+    flex-direction: column; }
+  .control__input {
+    margin-bottom: 1rem; }
   .types .card__pricetag {
     margin-bottom: 2rem;
     padding: 1rem 2rem; }
@@ -915,8 +994,12 @@ img {
     margin-left: 7px; }
   .projects .section-title__heading {
     margin-left: -60px; }
-  .swiper-button {
-    margin-left: 10px; }
+  .projects .section-title__text {
+    margin-left: -20px; }
+  .swiper-button-prev {
+    margin-left: -30px; }
+  .swiper-bullet {
+    margin-left: -30px; }
   .types .card__text {
     margin-top: -8rem;
     margin-bottom: 2rem;
