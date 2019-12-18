@@ -60,7 +60,8 @@
       margin-bottom: -0.5rem   
       
 @media screen and ( max-width: 760px )
-  
+  .mobile-order-top
+     order: -1
   .row 
     flex-direction: column
     align-items: center
@@ -144,16 +145,58 @@
        display: block
        min-width: 22.86rem
        margin-bottom: 1.85rem
-   .projects 
+   .projects
+     .col
+       &-50 
+         width: 100%
      .section-title
-       &__text
-   .mobile-order-top
-     order: -1
+       &__heading 
+         text-align: center
+         font-size: 20px
+         font-weight: 400
+         line-height: 138.6%
+         letter-spacing: -0.07em
+       &__word 
+         margin-left: 185px
+         text-align: center
+         font-size: 20px
+         font-weight: 400
+         line-height: 138.6%
+         letter-spacing: -0.07em
+         &::after
+           display: none
+       &__text 
+         margin-left: 100px
+         font-size: 1rem
+         width: 300px
+   .swiper
+     &-slide
+      text-align: center
+     &-button-prev 
+       margin-left: 150px
+     &-button-next 
+       margin-left: 150px     
+   .swiper-container-horizontal>.swiper-pagination-bullets 
+      margin-left: 155px
+
    .control 
+     background-color: $dark
+     .section-title 
+     &__heading 
+        color: $light  
+     &__text 
+       color: $light 
+     &__label 
+       color: $secondary
      &__form 
        flex-direction: column
      &__input 
-       margin-bottom: 1rem   
+       margin-bottom: 1rem 
+       &::placeholder
+          color: $light
+       
+     
+         
    .types
      .card__pricetag
        margin-bottom: 2rem
@@ -181,14 +224,23 @@
    .projects
      .section-title
       &__heading 
-        margin-left: -60px
+        font-size: 20px
+        font-weight: 400 
+      &__word 
+         margin-left: 70px
+         font-size: 20px  
       &__text 
-        margin-left: -20px
+        margin-left: -10px
    .swiper
-      &-button-prev
-        margin-left: -30px
-      &-bullet 
-        margin-left: -30px
+     &-slide
+      text-align: center
+     &-button-prev 
+       margin-left: 40px
+     &-button-next 
+       margin-left: 50px     
+   .swiper-container-horizontal>.swiper-pagination-bullets 
+      margin-left: 50px
+      
 
    
    .types    
