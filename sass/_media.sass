@@ -117,6 +117,8 @@
      &__pricetag
       padding: 1rem 2rem
       margin-bottom: 1.5rem
+   .footer__wrap 
+     margin-top: 0   
    .footer     
      &__map 
       max-width: 100%
@@ -149,7 +151,7 @@
        margin-bottom: 2.28rem
      &__button 
       display: block
-      min-width: 38rem
+      min-width: 25rem
       margin-bottom: 1.85rem
    .projects
      padding-top: 10px
@@ -158,27 +160,26 @@
          width: 100%
      .section-title
        &__heading 
-         text-align: center
          font-size: 22px
          font-weight: 400
          line-height: 138.6%
          letter-spacing: -0.07em
-         
-       &__word 
-         margin-left: 185px
          text-align: center
+       &__word 
          font-size: 22px
          font-weight: 400
          line-height: 138.6%
          letter-spacing: -0.07em
          padding-bottom: 10px
+         justify-content: center
          &::after
            display: none
        &__text 
-         margin-left: 100px
+         text-align: center
          font-size: 1rem
-         width: 300px
-         padding-bottom: 20px
+         
+         padding-bottom: 40px
+         margin: auto
    .swiper
      &-slide
       text-align: center
@@ -230,18 +231,32 @@
         padding: 1rem 4rem
         margin-bottom: -0.1rem
    .footer 
-     background: $dark     
+     background: none
+     font-size: 20px
+   .footer 
+     background-color: $dark
+          
    .footer__button 
-      min-width: 38rem
+      min-width: 25rem
    .footer__wrap 
      margin-top: 0
+     background: transparent
    .footer__map 
      order: -1
    .footer__info 
      margin-top: 40px
      font-size: 18px
+   
    .footer__menu 
      display: none
+   .footer 
+     &__input
+      padding-top: 0.3rem
+      &-group 
+        display: flex
+        flex-direction: column
+        flex-basis: 100%
+        margin-bottom: 3.2rem 
    .policy__label 
      &--center 
        margin-right: 210px
@@ -252,20 +267,31 @@
 @media screen and ( max-width: 320px )
    .hero 
      &__button 
-      //  display: block
+      display: block
       min-width: 22rem
      &__content
        margin-left: -2px
-   .projects
+     .title 
+       margin-bottom: 1rem
+       margin: 0
+       font-family: 'Yeseva One', cursive
+       text-transform: uppercase
+       font-size: 23px
+       line-height: 132.83%
+       font-weight: normal
+       &--primary
+        color: $primary
      .section-title
-        &__heading 
+       &__heading 
           font-size: 20px
           font-weight: 400 
-        &__word 
-          margin-left: 80px
+       &__word 
+          // margin-left: 80px
           font-size: 20px  
-        &__text 
-          margin-left: -10px
+       &__text
+          text-align: center 
+          font-size: 14px
+          // margin-left: -10px
      .swiper
        &-slide
         text-align: center
@@ -301,7 +327,7 @@
           padding: 1rem 
     
    .modal__button 
-     min-width: 19rem  
+     max-width: 19rem  
    .policy__label 
      &--center 
         margin-right: 20px 
@@ -311,7 +337,7 @@
    .footer 
      &__wrap 
        padding: 0 
-   .footer__map 
+    
      
 
 @media screen and ( max-height: 520px )

@@ -527,8 +527,16 @@ img {
     position: relative;
     max-width: 47.85rem;
     margin-left: 4.28rem; }
-  .hero__title {
-    margin-bottom: 1rem; }
+  .hero .title {
+    margin-bottom: 1rem;
+    margin: 0;
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    font-size: 2.857rem;
+    line-height: 1.4;
+    font-weight: normal; }
+    .hero .title--primary {
+      color: #e3b873; }
   .hero__text {
     font-size: 1.57rem;
     line-height: 131%;
@@ -591,16 +599,6 @@ img {
       height: 1px;
       background-color: #e3b873;
       margin-left: 8px; }
-
-.title {
-  margin: 0;
-  font-family: 'Yeseva One', cursive;
-  text-transform: uppercase;
-  font-size: 2.857rem;
-  line-height: 1.4;
-  font-weight: normal; }
-  .title--primary {
-    color: #e3b873; }
 
 .projects {
   padding-bottom: 30rem; }
@@ -714,6 +712,10 @@ img {
   flex-wrap: wrap;
   max-width: 55rem;
   margin: auto; }
+
+.control__input {
+  color: #131313;
+  outline: none; }
 
 .control__input-group {
   display: flex;
@@ -1032,6 +1034,8 @@ img {
   .card__pricetag {
     padding: 1rem 2rem;
     margin-bottom: 1.5rem; }
+  .footer__wrap {
+    margin-top: 0; }
   .footer__map {
     max-width: 100%;
     margin: 0 auto; }
@@ -1056,33 +1060,32 @@ img {
     margin-bottom: 2.28rem; }
   .hero__button {
     display: block;
-    min-width: 38rem;
+    min-width: 25rem;
     margin-bottom: 1.85rem; }
   .projects {
     padding-top: 10px; }
     .projects .col-50 {
       width: 100%; }
     .projects .section-title__heading {
-      text-align: center;
-      font-size: 22px;
-      font-weight: 400;
-      line-height: 138.6%;
-      letter-spacing: -0.07em; }
-    .projects .section-title__word {
-      margin-left: 185px;
-      text-align: center;
       font-size: 22px;
       font-weight: 400;
       line-height: 138.6%;
       letter-spacing: -0.07em;
-      padding-bottom: 10px; }
+      text-align: center; }
+    .projects .section-title__word {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 138.6%;
+      letter-spacing: -0.07em;
+      padding-bottom: 10px;
+      justify-content: center; }
       .projects .section-title__word::after {
         display: none; }
     .projects .section-title__text {
-      margin-left: 100px;
+      text-align: center;
       font-size: 1rem;
-      width: 300px;
-      padding-bottom: 20px; }
+      padding-bottom: 40px;
+      margin: auto; }
   .swiper-slide {
     text-align: center; }
   .swiper-button-prev {
@@ -1127,11 +1130,15 @@ img {
     padding: 1rem 4rem;
     margin-bottom: -0.1rem; }
   .footer {
-    background: #131313; }
+    background: none;
+    font-size: 20px; }
+  .footer {
+    background-color: #131313; }
   .footer__button {
-    min-width: 38rem; }
+    min-width: 25rem; }
   .footer__wrap {
-    margin-top: 0; }
+    margin-top: 0;
+    background: transparent; }
   .footer__map {
     order: -1; }
   .footer__info {
@@ -1139,29 +1146,47 @@ img {
     font-size: 18px; }
   .footer__menu {
     display: none; }
+  .footer__input {
+    padding-top: 0.3rem; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      margin-bottom: 3.2rem; }
   .policy__label--center {
     margin-right: 210px; } }
 
 @media screen and (max-width: 320px) {
   .hero__button {
+    display: block;
     min-width: 22rem; }
   .hero__content {
     margin-left: -2px; }
-  .projects .section-title__heading {
+  .hero .title {
+    margin-bottom: 1rem;
+    margin: 0;
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    font-size: 23px;
+    line-height: 132.83%;
+    font-weight: normal; }
+    .hero .title--primary {
+      color: #e3b873; }
+  .hero .section-title__heading {
     font-size: 20px;
     font-weight: 400; }
-  .projects .section-title__word {
-    margin-left: 80px;
+  .hero .section-title__word {
     font-size: 20px; }
-  .projects .section-title__text {
-    margin-left: -10px; }
-  .projects .swiper-slide {
+  .hero .section-title__text {
+    text-align: center;
+    font-size: 14px; }
+  .hero .swiper-slide {
     text-align: center; }
-  .projects .swiper-button-prev {
+  .hero .swiper-button-prev {
     margin-left: 40px; }
-  .projects .swiper-button-next {
+  .hero .swiper-button-next {
     margin-left: 40px; }
-  .projects .swiper-container-horizontal > .swiper-pagination-bullets {
+  .hero .swiper-container-horizontal > .swiper-pagination-bullets {
     margin-left: 40px; }
   .control__button {
     max-width: 22rem; }
@@ -1182,7 +1207,7 @@ img {
   .design .card__pricetag {
     padding: 1rem; }
   .modal__button {
-    min-width: 19rem; }
+    max-width: 19rem; }
   .policy__label--center {
     margin-right: 20px; }
   .footer__button {
