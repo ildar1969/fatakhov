@@ -53,6 +53,7 @@ $(document).ready(function () {
 
   $('.modal__form').validate({
     errorClass: "invalid",
+    errorElement: "div",
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -87,6 +88,7 @@ $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
 //валидация для control__form
 $('.control__form').validate({
   errorClass: "invalid",
+  errorElement: "div",
   rules: {
     // simple rule, converted to {required:true}
     userName: {
@@ -115,6 +117,7 @@ $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
 // Валидация для footer__form
 $('.footer__form').validate({
   errorClass: "invalid",
+  errorElement: "div",
   rules: {
     // simple rule, converted to {required:true}
     userName: {
